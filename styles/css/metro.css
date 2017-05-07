@@ -1,0 +1,113 @@
+html, body {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: rgb(50, 50, 50);
+}
+
+a:hover {
+  color: #fff;
+}
+
+.fg-white {
+  color: #fff;
+}
+
+.tile-container {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.tile-group-double {
+  width: 320px;
+}
+
+.tile-group {
+
+  margin-left: 80px;
+  min-width: 80px
+  float: left;
+  display: block;
+  padding-top: 40px;
+  position: relative;
+}
+
+.tile-label {
+  margin: 0 auto;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.tile-group .tile-group-title {
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  position: absolute;
+  top: 10px;
+}
+
+.tile-area .tile-area-title {
+  position: fixed;
+  top: 20px;
+  left: 80px;
+  font-weight: 300;
+  font-size: 42px;
+}
+
+.tile-area {
+  min-width: 100%;
+  position: relative;
+  padding: 120px 80px 0 0;
+}
+
+.tile {
+  width: 150px;
+  height: 150px;
+  display: block;
+  position: relative;
+}
+
+a.tile .fg-white {
+  margin: 5;
+}
+
+.bg-indigo {
+  background-color: #6a00ff;
+}
+
+.bg-darkBlue {
+  background-color: #16499a;
+}
+
+.bg-red {
+  background-color: #f00;
+}
+
+.bg-purple {
+  background-color: #4B0082;
+}
+
+.bg-green {
+  background-color: #006400;
+}
+
+.bg-grey {
+  background-color: #808080;
+}
+
+.glyphicon-folder-open {
+  font-size: 6em;
+  left: 20px;
+  top: 20px;
+
+}
+
+/*.tile-area-scheme-dark {
+  background-color: rgb(50, 50, 50);
+}*/
