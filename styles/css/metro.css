@@ -9,7 +9,8 @@ body {
 }
 
 a:hover {
-  color: #fff;
+  border: 5px solid #fff;
+  color: rgb(50, 150, 200);
 }
 
 .fg-white {
@@ -106,6 +107,11 @@ a.tile .fg-white {
   left: 20px;
   top: 20px;
 
+}
+
+.tile-lg {
+  height: 600px;
+  width: 600px;
 }
 
 /*.tile-area-scheme-dark {
