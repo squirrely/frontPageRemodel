@@ -7,14 +7,32 @@ body {
   height: auto;
   background-color: rgb(50, 50, 50);
 }
+.clearfix {
+  overflow: auto;
+}
 
-a:hover {
-  border: 5px solid #fff;
+
+.tile-group-double {
+  width: 320px;
+}
+
+.tile:hover {
+  border: 2px solid #fff;
   color: rgb(50, 150, 200);
 }
 
 .fg-white {
   color: #fff;
+}
+
+.tile-group {
+
+  /*margin-left: 80px;*/
+  min-width: 80px;
+  float: left;
+  display: block;
+  padding-top: 40px;
+  position: relative;
 }
 
 .tile-container {
@@ -25,18 +43,75 @@ a:hover {
   padding: 0;
 }
 
-.tile-group-double {
-  width: 320px;
+
+.tile-sm {
+  min-width: 150px;
+  min-height: 120px;
 }
 
-.tile-group {
+.tile-sm {
+  max-width: 250px;
+  max-height: 220px;
+}
 
-  margin-left: 80px;
-  min-width: 80px
-  float: left;
+.tile-top .tile-low {
+  margin-bottom: 10px;
+}
+
+.tile-low {
+  margin-top: 10px;
+}
+
+.r-col {
+  clear: left;
+  margin-left: 500px;
+  position: absolute;
+}
+
+.tile.bg-indigo {
+  /*margin-top: 20px;*/
+  clear: right;
+}
+
+.bg-indigo {
+  background-color: #6a00ff;
+}
+
+.bg-darkBlue {
+  background-color: #16499a;
+}
+
+.tile-lg {
+  height: 450px;
+  width: 450px;
   display: block;
-  padding-top: 40px;
+}
+
+.bg-green {
+  background-color: #006400;
+}
+
+.slide-left {
   position: relative;
+  transition: all .5s;
+  overflow: hidden;
+  display: none;
+}
+
+.slide {
+  position: absolute;
+  background: rgba(255, 0, 0, 0.5);
+  padding: 10px 20px;
+
+  opacity: 0;
+  bottom: 0;
+  left: -30%;
+  transition: all 0.6s ease;
+}
+
+.slide-left:hover .slide {
+  opacity: 1;
+  left: 0;
 }
 
 .tile-label {
@@ -68,8 +143,6 @@ a:hover {
 }
 
 .tile {
-  width: 150px;
-  height: 150px;
   display: block;
   position: relative;
 }
@@ -78,24 +151,31 @@ a.tile .fg-white {
   margin: 5;
 }
 
-.bg-indigo {
-  background-color: #6a00ff;
+.tile-video {
+  height: 300px;
+  width: 350px;
 }
 
-.bg-darkBlue {
-  background-color: #16499a;
+.video-left {
+  clear: right;
 }
 
 .bg-red {
   background-color: #f00;
 }
 
+.video-right {
+  float: right;
+  clear: left;
+}
+
 .bg-purple {
   background-color: #4B0082;
 }
 
-.bg-green {
-  background-color: #006400;
+.tile-store {
+  height: 200px;
+  width: 500px;
 }
 
 .bg-grey {
@@ -105,14 +185,11 @@ a.tile .fg-white {
 .glyphicon-folder-open {
   font-size: 6em;
   left: 20px;
-  top: 20px;
+  top: 10px;
 
 }
 
-.tile-lg {
-  height: 600px;
-  width: 600px;
-}
+
 
 /*.tile-area-scheme-dark {
   background-color: rgb(50, 50, 50);
